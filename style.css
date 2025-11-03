@@ -1,0 +1,806 @@
+/* 
+font */
+
+.mulish {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* nav style */
+header{
+    width: 1400px;
+    margin-left: 150px;
+    margin-right: 200px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img{
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.logo h1 {
+  white-space: nowrap; /* 👈 এক লাইনে রাখবে */
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.nav{
+    margin-top: 30px;
+    margin-left: 650px;
+}
+.nav ul {
+    display: flex;
+    gap:20px
+}
+.nav ul li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+}
+.h{
+    color: orangered;
+}
+.menu-icon {
+  display: none;
+}
+/* banner style */
+.banner {
+  position: relative;
+  height: 500px;
+  background: url('./Images/Group\ 13\ \(1\)\ \(1\).png') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 11, 11, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+}
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.search-box input,
+.search-box select {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  width: 180px;
+}
+
+.search-box button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #ff8533;
+}
+/* banner style end */
+/* 
+popular tour section style */
+.popular-tours {
+  max-width: 1200px;
+  margin: 10px auto; /* 👉 Center below banner */
+  padding: 0 20px;
+}
+.tours-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-left: 130px;
+}
+
+.tours-text{
+    width: 550px;
+    height: 540px;
+    line-height: 3.9;
+}
+.tours-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #111;
+  font-weight: 700;
+}
+.tours-text p {
+  color: #555;
+  line-height: 0.9;
+  margin-bottom: 15px;
+}
+
+.tours-text ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.tours-text li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.tours-text button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 35px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.tours-text button:hover {
+  background-color: #ff8533;
+}
+
+.tours-image img {
+    margin-top: 190px;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+/* chose dest style */
+.destination {
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.destination-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+}
+.destination-content p {
+  color: #555;
+  margin: 15px 0 40px;
+  line-height: 1.5;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.item1,.item2{
+      grid-column: span 2;
+}
+.item4{
+    grid-column: span 2;
+}
+.item6,.item7{
+    grid-column:  span 2;
+}
+.destination-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.destination-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.destination-item:hover img {
+  transform: scale(1.05);
+}
+
+.destination-item h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* chose us style */
+
+.choose-us {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.choose-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.choose-header p {
+  color: #555;
+  margin: 15px 0 50px;
+  line-height: 1.6;
+}
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.choose-card {
+  background-color: #fff7f2;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.choose-card:nth-child(2) {
+  background-color: #f0f9ff;
+}
+
+.choose-card:nth-child(3) {
+  background-color: #fff1f3;
+  grid-column: span 2;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.choose-card:hover {
+  transform: translateY(-5px);
+}
+
+.choose-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.choose-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.choose-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* deals and discount */
+.deals {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.deals-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.deals-header p {
+  color: #555;
+  margin: 10px 0 50px;
+}
+/* === DEAL CARD === */
+.deal-card {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.deal-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 25px;
+  text-align: left;
+}
+
+.deal-card ,.left ,.deal-info {
+  left: 40px;
+}
+
+.deal-card,.right, .deal-info {
+  right: 40px;
+}
+.deal-meta {
+  display: flex;
+  gap: 15px;
+  color: #ff6b00;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.deal-info h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.deal-info p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.price {
+  color: #ff6b00;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.deal-info button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.deal-info button:hover {
+  background-color: #ff8533;
+}
+.see-more {
+  text-align: center;
+}
+
+.see-more button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.see-more button:hover {
+  background-color: #ff8533;
+}
+
+/* simple perfect place */
+.perfect-place {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.place-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.place-text {
+  flex: 1;
+  line-height: 1.6;
+}
+.place-text h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.place-text p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.place-text ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.place-text li {
+  margin-bottom: 10px;
+  color: #333;
+}
+.place-text button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.place-text button:hover {
+  background-color: #ff8533;
+}
+
+.place-video {
+  flex: 1;
+  position: relative;
+}
+
+.place-video video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.video-overlay {
+  position: relative;
+}
+
+.video-overlay h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* newslatter section */
+/* ===== Newsletter Section ===== */
+.newsletter {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* === Left: Form === */
+.newsletter-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  border: 2px solid orangered;
+}
+
+.newsletter-form h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.newsletter-form p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #ff8533;
+}
+
+/* === Right: Image Section === */
+.newsletter-image {
+  flex: 1;
+  position: relative;
+}
+
+.newsletter-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Discount Badge */
+.discount-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transform: rotate(-15deg);
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.discount-badge p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.discount-badge h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* footer style */
+.footer {
+  background-color: #f5f5f5;
+  padding: 60px 20px 30px;
+  text-align: center;
+  color: #333;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.footer-logo .orange {
+  color: #ff6b00;
+}
+
+.footer p {
+  color: #555;
+  margin: 15px auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.footer-icons {
+  margin: 20px 0;
+}
+
+.footer-icons a {
+  color: #333;
+  font-size: 1.3rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #ff6b00;
+}
+
+.footer hr {
+  width: 80%;
+  margin: 20px auto;
+  border: 0.5px solid #ddd;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* header and banner responsive */
+@media (max-width: 576px) {
+  header {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-content h1{
+    margin-top:40px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo h1 {
+    white-space: nowrap; /* 👈 Hero Travel এক লাইনে থাকবে */
+    font-size: 1.3rem;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    margin-top: 35px;
+    cursor: pointer;
+    margin-left: -450px;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+/* popular section */
+@media (max-width: 576px){
+    .tours-container{
+        display: grid;
+        grid-template-row: repeat(1,1fr);
+        margin-left: 20px;
+        gap:10px;
+    }
+}
+
+/* choose you dest */
+@media (max-width: 576px){
+   .destination-content{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 30px;
+   }
+   .destination-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   }
+}
+
+/* WHY CHOOSE US */
+@media (max-width: 576px){
+    .choose-header {
+    text-align: center;
+  }
+
+  .choose-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* ✅ প্রতিটি card একে একে নিচে আসবে */
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .choose-card {
+    text-align: center;
+  }
+}
+
+/* deals and discount */
+@media (max-width: 576px){
+    .deals{
+        margin-bottom: 24px;
+    }
+    .deal-card{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .deal-card img{
+        height: 500px;
+    }
+    .deal-info{
+      margin-top: 5px;
+      height: 280px;
+    }
+    .see-more{
+        margin-left:80px;
+    }
+}
+/* simple perfect place */
+@media (max-width: 576px){
+    .perfect-place{
+        margin-left: 50px;
+    }
+    .place-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width: 576px){
+    .newsletter-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
