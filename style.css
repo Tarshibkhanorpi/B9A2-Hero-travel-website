@@ -16,23 +16,25 @@ header{
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 2px;
+  margin-left: 30px;
 }
 .logo img{
     margin-top: 30px;
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 .logo h1 {
   white-space: nowrap; /* 👈 এক লাইনে রাখবে */
   font-size: 1.3rem;
   font-weight: 700;
+
 }
 .nav{
     margin-top: 30px;
-    margin-left: 650px;
+    margin-right:80px
 }
 .nav ul {
     display: flex;
